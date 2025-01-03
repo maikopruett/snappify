@@ -108,12 +108,24 @@
         justify-content: center;
         flex-direction: column;
         position: absolute;
+        gap: 20px;
         top: 0;
         right: 0;
         width: 100dvw;
         height: 100dvh;
         backdrop-filter: blur(7px);
         z-index: 1000;
+    }
+
+    .nav-menu.open li {
+        list-style: none;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .nav-menu.open a {
+        color: #bc6c25;
+        text-decoration: none;
     }
 }
 

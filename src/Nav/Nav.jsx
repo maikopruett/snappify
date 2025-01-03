@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import './Nav.css'
 
 export default function Nav() {
@@ -22,7 +23,12 @@ function toggleMenu() {
                 <span className={`nav-hamburger ${isMenuOpen ? 'open' : ''}`}></span>
             </button>
             <div className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
-                <h1>cool beans</h1>
+                <NavLink to={'/pricing'}>
+                    <li>Pricing</li>
+                </NavLink>
+                <NavLink to={'/contact'}>
+                    <li>Contact</li>
+                </NavLink>
             </div>
         </div>
     </>

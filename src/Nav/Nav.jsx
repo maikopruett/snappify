@@ -23,8 +23,14 @@ function toggleMenu() {
                 <span className={`nav-hamburger ${isMenuOpen ? 'open' : ''}`}></span>
             </button>
             <div className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+                <NavLink onClick={toggleMenu} to={'/'}>
+                    <li>Home</li>
+                </NavLink>
                 <NavLink onClick={toggleMenu} to={'/pricing'}>
                     <li>Pricing</li>
+                </NavLink>
+                <NavLink onClick={toggleMenu} to={'/portfolio'}>
+                    <li>Portfolio</li>
                 </NavLink>
                 <NavLink onClick={toggleMenu} to={'/contact'}>
                     <li>Contact</li>

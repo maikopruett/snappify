@@ -16,6 +16,20 @@ function toggleMenu() {
     <>
         <div className='nav-container'>
             <h1 className='logo'>SNAPP</h1>
+            <div className='nav-menu-desktop'>
+                <NavLink onClick={toggleMenu} to={'/'}>
+                    <li>Home</li>
+                </NavLink>
+                <NavLink onClick={toggleMenu} to={'/pricing'}>
+                    <li>Pricing</li>
+                </NavLink>
+                <NavLink onClick={toggleMenu} to={'/portfolio'}>
+                    <li>Portfolio</li>
+                </NavLink>
+                <NavLink onClick={toggleMenu} to={'/contact'}>
+                    <li>Contact</li>
+                </NavLink>
+            </div>
         </div>
         <div className='nav-container-mobile'>
             <h1 className='logo'>SNAPP</h1>

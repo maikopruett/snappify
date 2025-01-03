@@ -22,7 +22,7 @@ function toggleMenu() {
                 <span className={`nav-hamburger ${isMenuOpen ? 'open' : ''}`}></span>
             </button>
             <div className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
-
+                <h1>cool beans</h1>
             </div>
         </div>
     </>

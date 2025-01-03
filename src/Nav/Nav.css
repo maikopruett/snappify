@@ -36,6 +36,7 @@
     .nav-container-mobile {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         width: 85%;
         height: 60px;
         background: #606c38;
@@ -43,6 +44,58 @@
         margin-top: 20px;
         border-radius: 15px;
         padding: 0px 15px;
+    }
+
+    .nav-mobile-toggle {
+        display: block;
+        background: none;
+        border: none;
+        padding: 10px;
+        position: relative;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        transform: translateY(-50%);
+        z-index: 1001;
+    }
+
+    .nav-hamburger {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: white;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-hamburger::before,
+    .nav-hamburger::after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background: white;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-hamburger::before {
+        transform: translateY(-8px);
+    }
+    
+    .nav-hamburger::after {
+        transform: translateY(8px);
+    }
+    
+    .nav-hamburger.open {
+        background: transparent;
+    }
+    
+    .nav-hamburger.open::before {
+        transform: rotate(45deg);
+    }
+    
+    .nav-hamburger.open::after {
+        transform: rotate(-45deg);
     }
 }
 

@@ -21,6 +21,9 @@ function toggleMenu() {
             <button className='nav-mobile-toggle' onClick={toggleMenu}>
                 <span className={`nav-hamburger ${isMenuOpen ? 'open' : ''}`}></span>
             </button>
+            <div className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+
+            </div>
         </div>
     </>
   )

@@ -23,14 +23,14 @@
 .nav-menu-desktop {
     display: flex;
     list-style: none;
-    gap: 35px;
+    gap: 30px;
 }
 
 .nav-menu-desktop li {
     font-family: "Poppins", serif;
     padding: 5px 15px;
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     transition: ease-out 0.2s;
 }

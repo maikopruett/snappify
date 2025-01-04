@@ -38,6 +38,7 @@
 
 .nav-menu-desktop li:hover {
     box-shadow: 2px 2px 1px white;
+    background: #283618;
     transition: ease-in 0.3s;
     scale: 1.05;
 }

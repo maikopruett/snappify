@@ -27,7 +27,7 @@ function toggleMenu() {
                     <li>Portfolio</li>
                 </NavLink>
                 <NavLink onClick={toggleMenu} to={'/contact'}>
-                    <li>Contact</li>
+                    <li id='contact-btn'>Contact</li>
                 </NavLink>
             </div>
         </div>

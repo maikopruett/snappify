@@ -22,6 +22,7 @@
 
 .nav-menu-desktop {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 30px;
 }
@@ -54,6 +55,12 @@
 
 .nav-container-mobile {
     display: none;
+}
+
+#contact-btn {
+    background: #bc6c25;
+    border-radius: 8px;
+    padding: 2px 15px;
 }
 
 @media (max-width: 750px) {

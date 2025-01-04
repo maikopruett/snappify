@@ -9,6 +9,7 @@
 }
 
 .call-to-action-header {
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +17,12 @@
     background: rgba(37, 66, 28, 0.6);
     border-radius: 25px;
     padding: 5px;
+    transition: 0.2s;
+}
+
+.call-to-action-header:hover {
+    box-shadow: 0px 0px 7px #bc6c25;
+    transition: 0.2s;
 }
 
 #new {
@@ -35,7 +42,7 @@
 }
 
 #main-header {
-    margin-top: 80px;
+    margin-top: 30px;
     font-family: "Roboto", serif;
     font-size: 3rem;
     font-weight: 800;

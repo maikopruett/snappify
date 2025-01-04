@@ -15,5 +15,7 @@
 }
 
 @media (max-width: 750px) {
-    
+    #main-header {
+        font-size: 1.3rem;
+    }
 }

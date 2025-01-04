@@ -8,14 +8,17 @@
 }
 
 #main-header {
+    margin-top: 80px;
     font-family: "Roboto", serif;
     font-size: 3rem;
     font-weight: 800;
     text-align: center;
+    line-height: 60px;
 }
 
 @media (max-width: 750px) {
     #main-header {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
+        line-height: 35px;
     }
 }

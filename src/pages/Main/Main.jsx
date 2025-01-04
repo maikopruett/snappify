@@ -4,6 +4,11 @@ import './Main.css'
 export default function Main() {
   return (
     <div className='main-container'>
+      <div className='call-to-action-header'>
+        <p id='new'>New</p>
+        <p>Limited users get a free site</p>
+        <img src="/right_arrow.svg" alt="" />
+      </div>
       <h1 id="main-header">Forget Monthly Hosting Fees! <br /> Ditch Costs & Go SNAPP</h1>
       <p id='main-subheader'>Snapp builds beautiful websites without the recurring costs—just pay once and own it!</p>
       <button id='call-to-action-btn'>Get started free</button>

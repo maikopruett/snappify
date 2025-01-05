@@ -166,6 +166,13 @@
     border-radius: 5px;
     font-weight: 600;
     font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+#main-snapp-pricing-btn:hover {
+    background: #ecc190;
+    scale: 1.05;
+    transition: 0.3s;
 }
 
 @media (max-width: 750px) {

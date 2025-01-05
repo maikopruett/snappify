@@ -146,6 +146,10 @@
     gap: 8px;
 }
 
+.main-snapp-pricing {
+    margin-left: 10px;
+}
+
 .main-snapp-pricing-call-to-action {
     margin-top: 10px;
     display: flex;

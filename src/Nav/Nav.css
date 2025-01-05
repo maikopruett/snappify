@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: space-between;
     width: 70%;
+    max-width: 1000px;
     height: 60px;
     background: #606c38;
     margin: auto auto;
@@ -63,6 +64,127 @@
     background: #bc6c25;
 }
 
+.nav-container-mobile {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    height: 60px;
+    background: #606c38;
+    margin: auto auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 0px 15px;
+}
+
+.nav-mobile-toggle {
+    display: block;
+    background: none;
+    border: none;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 1001;
+}
+
+.nav-hamburger {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-hamburger::before,
+.nav-hamburger::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.nav-hamburger::before {
+    transform: translateY(-8px);
+}
+
+.nav-hamburger::after {
+    transform: translateY(8px);
+}
+
+.nav-hamburger.open {
+    background: transparent;
+}
+
+.nav-hamburger.open::before {
+    transform: rotate(45deg);
+}
+
+.nav-hamburger.open::after {
+    transform: rotate(-45deg);
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-menu.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 35px;
+    top: 0;
+    right: 0;
+    width: 100dvw;
+    height: 100dvh;
+    backdrop-filter: blur(7px);
+    z-index: 1000;
+}
+
+.nav-menu.open li {
+    list-style: none;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.nav-menu.open a {
+    color: #bc6c25;
+    text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+
+    .nav-menu-desktop li {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 950px) {
+    
+    .nav-container {
+        display: none;
+    }
+
+    .nav-container-mobile {
+        display: flex;
+    }
+
+    .nav-menu.open li {
+        font-size: 5rem;
+    }
+
+    .nav-menu.open {
+        gap: 80px;
+    }
+}
+
 @media (max-width: 750px) {
 
     .nav-container {
@@ -75,97 +197,15 @@
 
     .nav-container-mobile {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 85%;
-        height: 60px;
-        background: #606c38;
-        margin: auto auto;
-        margin-top: 20px;
-        border-radius: 15px;
-        padding: 0px 15px;
-    }
-
-    .nav-mobile-toggle {
-        display: block;
-        background: none;
-        border: none;
-        padding: 10px;
-        position: relative;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-        transform: translateY(-50%);
-        z-index: 1001;
-    }
-
-    .nav-hamburger {
-        display: block;
-        width: 24px;
-        height: 2px;
-        background: white;
-        position: relative;
-        transition: all 0.3s ease;
-    }
-    
-    .nav-hamburger::before,
-    .nav-hamburger::after {
-        content: '';
-        position: absolute;
-        width: 24px;
-        height: 2px;
-        background: white;
-        transition: all 0.3s ease;
-    }
-    
-    .nav-hamburger::before {
-        transform: translateY(-8px);
-    }
-    
-    .nav-hamburger::after {
-        transform: translateY(8px);
-    }
-    
-    .nav-hamburger.open {
-        background: transparent;
-    }
-    
-    .nav-hamburger.open::before {
-        transform: rotate(45deg);
-    }
-    
-    .nav-hamburger.open::after {
-        transform: rotate(-45deg);
-    }
-
-    .nav-menu {
-        display: none;
-    }
-
-    .nav-menu.open {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: absolute;
-        gap: 35px;
-        top: 0;
-        right: 0;
-        width: 100dvw;
-        height: 100dvh;
-        backdrop-filter: blur(7px);
-        z-index: 1000;
     }
 
     .nav-menu.open li {
-        list-style: none;
-        font-size: 3rem;
-        font-weight: 600;
+        font-size: 3.5rem;
     }
 
-    .nav-menu.open a {
-        color: #bc6c25;
-        text-decoration: none;
+    .nav-menu.open {
+        gap: 35px;
     }
+
 }
 

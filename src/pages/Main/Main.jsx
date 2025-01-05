@@ -14,20 +14,22 @@ export default function Main() {
       <button id='call-to-action-btn'>Get started free</button>
       
       <div className='main-pricing-container'>
-        <div className='main-competitor-pricing'>
+        <div className='main-pricing'>
           <h1>Competitors Pricing</h1>
           <h2>Yearly Operating Cost</h2>
-          <h3>Wix<span>$183.6</span></h3>
-          <h3>Squarespace<span>$172.8</span></h3>
-          <h3>Shopify<span>$348</span></h3>
-          <h3>Hostinger<span>$143.88</span></h3>
-          <h3>GoDaddy<span>$143.88</span></h3>
+          <div className='main-pricing-info'>
+            <h3>Wix<span>$183.6</span></h3>
+            <h3>Squarespace<span>$172.8</span></h3>
+            <h3>Shopify<span>$348</span></h3>
+            <h3>Hostinger<span>$143.88</span></h3>
+            <h3>GoDaddy<span>$143.88</span></h3>
+          </div>
         </div>
         <div className='main-pricing'>
           <h1>SNAPP Pricing</h1>
           <h2>Yearly Operating Cost</h2>
           <p>Just a one time initial fee averaging only $60!</p>
-          <h3>SNAPP - $12</h3>
+          <h3>SNAPP<span>$12</span></h3>
         </div>
       </div>
     </div>

@@ -25,11 +25,20 @@ export default function Main() {
             <h3>GoDaddy<span>$143.88</span></h3>
           </div>
         </div>
-        <div className='main-pricing'>
+        <div className='main-pricing' id='main-snapp-pricing'>
           <h1>SNAPP Pricing</h1>
           <h2>Yearly Operating Cost</h2>
-          <p>Just a one time initial fee averaging only $60!</p>
-          <h3>SNAPP<span>$12</span></h3>
+          <div className='main-snapp-pricing'>
+            <h1>$12<span>/year</span></h1>
+            <p id='main-pricing-context'>Domain registration cost only</p>
+            <div className='main-snap-info'><img src="/check.svg" alt="" /><p>One-time setup fee of $60</p></div>
+            <div className='main-snap-info'><img src="/check.svg" alt="" /><p>No monthly fees</p></div>
+            <div className='main-snap-info'><img src="/check.svg" alt="" /><p>Only pay for domain renewal</p></div>
+          </div>
+          <div className='main-snapp-pricing-call-to-action'>
+            <p><b>Save up to $336/year</b> compared to competitors</p>
+            <button id='main-snapp-pricing-btn'>Save Now</button>
+          </div>
         </div>
       </div>
     </div>

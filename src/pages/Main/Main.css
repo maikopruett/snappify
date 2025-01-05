@@ -83,106 +83,6 @@
     transition: 0.1s;
 }
 
-.main-pricing-container {
-    margin-top: 95px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-}
-
-.main-pricing {
-    border-radius: 10px;
-    background: #606c38d7;
-    color: #fefae0;
-    padding: 20px;
-    width: 85%;
-    max-width: 550px;
-}
-
-.main-pricing h3 {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-}
-
-.main-pricing h1 {
-    margin-bottom: 0;
-}
-
-.main-pricing h2 {
-    margin-top: 8px;
-    margin-bottom: 45px;
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-
-.main-pricing span {
-    font-weight: bold;
-}
-
-.main-pricing-info {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-#main-snapp-pricing {
-    background: #33461e;
-}
-
-#main-snapp-pricing h1 span {
-    font-size: 1.2rem;
-    color: #dda15e;
-}
-
-#main-pricing-context {
-    margin-top: 5px;
-}
-
-.main-snap-info {
-    display: flex;
-    gap: 8px;
-}
-
-.main-snapp-pricing {
-    margin-left: 10px;
-}
-
-.main-snapp-pricing-call-to-action {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #9e5c10;
-    padding: 13px;
-    border-radius: 10px;
-}
-
-.main-snapp-pricing-call-to-action p {
-    margin: 0;
-}
-
-#main-snapp-pricing-btn {
-    border: none;
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: 0.2s;
-}
-
-#main-snapp-pricing-btn:hover {
-    background: #ecc190;
-    scale: 1.05;
-    transition: 0.3s;
-}
-
-#main-call-to-action-p-mobile {
-    display: none;
-}
-
 @media (max-width: 750px) {
     #main-header {
         font-size: 1.7rem;
@@ -205,13 +105,5 @@
 
     #call-to-action-btn:active {
         scale: 0.95;
-    }
-
-    #main-call-to-action-p {
-        display: none;
-    }
-
-    #main-call-to-action-p-mobile {
-        display: flex;
     }
 }

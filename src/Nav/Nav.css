@@ -144,7 +144,7 @@
     right: 0;
     width: 100dvw;
     height: 100dvh;
-    backdrop-filter: blur(7px);
+    background: #606550;
     z-index: 1000;
 }
 
@@ -155,7 +155,7 @@
 }
 
 .nav-menu.open a {
-    color: #bc6c25;
+    color: #dda15e;
     text-decoration: none;
 }
 

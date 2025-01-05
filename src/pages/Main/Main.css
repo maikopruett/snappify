@@ -175,6 +175,10 @@
     transition: 0.3s;
 }
 
+#main-call-to-action-p-mobile {
+    display: none;
+}
+
 @media (max-width: 750px) {
     #main-header {
         font-size: 1.7rem;
@@ -197,5 +201,13 @@
 
     #call-to-action-btn:active {
         scale: 0.95;
+    }
+
+    #main-call-to-action-p {
+        display: none;
+    }
+
+    #main-call-to-action-p-mobile {
+        display: flex;
     }
 }

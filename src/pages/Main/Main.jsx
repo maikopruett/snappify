@@ -36,7 +36,8 @@ export default function Main() {
             <div className='main-snap-info'><img src="/check.svg" alt="" /><p>Only pay for domain renewal</p></div>
           </div>
           <div className='main-snapp-pricing-call-to-action'>
-            <p><b>Save up to $336/year</b> compared to competitors</p>
+            <p id='main-call-to-action-p'><b>Save up to $336/year</b> compared to competitors</p>
+            <p id='main-call-to-action-p-mobile'><b>Save up to $336/year</b></p>
             <button id='main-snapp-pricing-btn'>Save Now</button>
           </div>
         </div>

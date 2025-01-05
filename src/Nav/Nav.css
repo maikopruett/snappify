@@ -146,17 +146,40 @@
     height: 100dvh;
     background: #606550;
     z-index: 1000;
+    animation: fadein ease-in 0.15s;
 }
 
 .nav-menu.open li {
     list-style: none;
     font-size: 3rem;
     font-weight: 600;
+    animation-delay: 0.1s;
+    animation: fadeinup 0.3s ease-in-out;
 }
 
 .nav-menu.open a {
     color: #dda15e;
     text-decoration: none;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinup {
+    from {
+        transform: translateY(150%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 1100px) {

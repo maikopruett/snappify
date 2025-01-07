@@ -15,7 +15,7 @@ function toggleMenu() {
   return (
     <>
         <div className='nav-container'>
-            <h1 className='logo'>SNAPP</h1>
+            <h1 className='logo'>Snappify</h1>
             <div className='nav-menu-desktop'>
                 <NavLink onClick={toggleMenu} to={'/'}>
                     <li>Home</li>
@@ -32,7 +32,7 @@ function toggleMenu() {
             </div>
         </div>
         <div className='nav-container-mobile'>
-            <h1 className='logo'>SNAPP</h1>
+            <h1 className='logo'>Snappify</h1>
             <button className='nav-mobile-toggle' onClick={toggleMenu}>
                 <span className={`nav-hamburger ${isMenuOpen ? 'open' : ''}`}></span>
             </button>

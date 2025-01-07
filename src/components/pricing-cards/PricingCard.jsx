@@ -16,7 +16,7 @@ export default function PricingCard() {
         </div>
         </div>
         <div className='main-pricing' id='main-snapp-pricing'>
-        <h1>SNAPP Pricing</h1>
+        <h1>Snappify Pricing</h1>
         <h2>Yearly Operating Cost</h2>
         <div className='main-snapp-pricing'>
             <h1>$12<span>/year</span></h1>

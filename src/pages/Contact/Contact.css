@@ -2,7 +2,7 @@
     margin: auto auto;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 683px) {
     .contact-wigit {
         width: 95%;
         margin-top: 25px;

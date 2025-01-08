@@ -1,5 +1,6 @@
 import React from 'react'
 import './PricingCard.css'
+import { NavLink } from 'react-router-dom'
 
 export default function PricingCard() {
   return (
@@ -28,7 +29,9 @@ export default function PricingCard() {
         <div className='main-snapp-pricing-call-to-action'>
             <p id='main-call-to-action-p'><b>Save up to $336/year</b> compared to competitors</p>
             <p id='main-call-to-action-p-mobile'><b>Save up to $336/year</b></p>
-            <button id='main-snapp-pricing-btn'>Save Now</button>
+            <NavLink to={'/contact'}>
+              <button id='main-snapp-pricing-btn'>Save Now</button>
+            </NavLink>
         </div>
         </div>
     </div>

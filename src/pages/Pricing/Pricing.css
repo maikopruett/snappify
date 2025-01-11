@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.pricing-section {
+    font-family: 'Inter', sans-serif;
+    padding: 80px 20px;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-header h1 {
+    font-size: 2.5rem;
+    color: #1a1f36;
+    margin: 0 0 16px 0;
+    font-weight: 700;
+}
+
+.pricing-header p {
+    font-size: 1.125rem;
+    color: #4f566b;
+    margin: 0;
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: #33461e;
+    border-radius: 16px;
+    padding: 40px;
+    width: 340px;
+    position: relative;
+    border: 1px solid #e6e8eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    animation: pricing-card-entry 0.6s ease-out;
+}
+
+@keyframes pricing-card-entry {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pricing-popular {
+    border: 2px solid #dda15e;
+    animation-delay: 0.2s;
+}
+
+.pricing-popular-tag {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #bc6c25;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.pricing-plan-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pricing-price {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.pricing-currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #d7d7d7;
+    vertical-align: top;
+}
+
+.pricing-amount {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.pricing-period {
+    text-align: center;
+    color: #aaa597;
+    font-size: 0.875rem;
+    margin-bottom: 32px;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+    flex-grow: 1;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-size: 0.9375rem;
+    margin-bottom: 16px;
+}
+
+.pricing-check {
+    width: 20px;
+    height: 20px;
+    stroke: #dda15e;
+    stroke-width: 2;
+    fill: none;
+}
+
+.pricing-button {
+    background: #f4f5f7;
+    color: #1a1f36;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-button-popular {
+    background: #bc6c25;
+    color: white;
+}
+
+.pricing-button:hover {
+    scale: 1.05;
+}
+
+.pricing-button:active {
+    scale: 1;
+}
+
+@media (max-width: 1024px) {
+    .pricing-card {
+        width: 300px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-section {
+        padding: 60px 15px;
+    }
+
+    .pricing-header h1 {
+        font-size: 2rem;
+    }
+
+    .pricing-container {
+        gap: 20px;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 400px;
+        padding: 30px 20px;
+    }
+    
+    .pricing-popular {
+        order: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-section {
+        padding: 40px 10px;
+    }
+
+    .pricing-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .pricing-amount {
+        font-size: 3rem;
+    }
+}

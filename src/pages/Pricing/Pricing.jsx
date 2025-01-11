@@ -1,6 +1,7 @@
 // Pricing.jsx
 import React from 'react';
 import './Pricing.css';
+import { NavLink } from 'react-router-dom';
 
 export default function Pricing() {
   return (
@@ -51,7 +52,9 @@ export default function Pricing() {
               Contact Form
             </li>
           </ul>
-          <button className="pricing-button">Get Started</button>
+          <NavLink to={'/contact'}>
+            <button className="pricing-button">Get Started</button>
+          </NavLink>
         </div>
 
         <div className="pricing-card pricing-popular">
@@ -101,7 +104,9 @@ export default function Pricing() {
               Analytics Dashboard
             </li>
           </ul>
-          <button className="pricing-button pricing-button-popular">Get Started</button>
+          <NavLink to={'/contact'}>
+            <button className="pricing-button pricing-button-popular">Get Started</button>
+          </NavLink>
         </div>
 
         <div className="pricing-card">
@@ -150,7 +155,9 @@ export default function Pricing() {
               Priority Support
             </li>
           </ul>
-          <button className="pricing-button">Get Started</button>
+          <NavLink to={'/contact'}>
+            <button className="pricing-button">Get Started</button>
+          </NavLink>
         </div>
       </div>
     </div>

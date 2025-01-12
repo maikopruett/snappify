@@ -19,7 +19,6 @@ export default function Contact() {
     <div 
       className="calendly-inline-widget contact-wigit"
       data-url="https://calendly.com/snappify/30min?hide_gdpr_banner=1&background_color=384925&text_color=ffffff&primary_color=ffffff"
-      style={{ minWidth: '320px', height: '700px' }}
     />
   );
 }

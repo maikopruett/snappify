@@ -1,12 +1,15 @@
 .contact-wigit {
     margin: auto auto;
+    height: 700px;
+    width: auto;
 }
 
 @media (max-width: 683px) {
     .contact-wigit {
         width: 95%;
+        height: 80dvh;
         margin-top: 25px;
-        border: 5px solid #384925;
         border-radius: 15px;
+        overflow: auto;
     }
 }
